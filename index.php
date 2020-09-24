@@ -4,19 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
-        <title>Prueba de PHP</title>
+        <link rel="stylesheet" href="style.css">
+        <title>PHP para principiantes</title>
     </head>
     <body>
-        <div class="container border">
+        <div class="container">
             <div class="row">
                 <div class="col-xl-2 bd-sidebar border">
-                    <?php 
-                    include './menu.php' ;
-                    ?>
+                    <?php include($_SERVER['DOCUMENT_ROOT'].'/php-principiantes/menu.php') ?>
                 </div>
-                <div class="col-xl-10 border">
-                    <h1><?= "Hello, world! " ?></h1>
-                </div>
+                <div class="col-xl-10 index"></div>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>

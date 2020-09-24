@@ -107,8 +107,10 @@ $genial = 'fantástico';
 echo "Esto es {$genial}";
 echo "Esto funciona: {$jugos['koolaid1']}";
 echo "Él tomó algo de jugo {$jugos["negro"][0]}." . PHP_EOL;
+?>
 
-
-
-
-
+<br><label>Si TRUE es una cadena, imprimirla:</label>
+<?php
+if (is_string(TRUE)) {
+    echo "Cadena: " . "foo";
+}

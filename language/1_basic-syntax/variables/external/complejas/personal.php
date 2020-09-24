@@ -23,16 +23,15 @@
                     }
                     ?>
                     <form action="" method="post">
-                        Nombre:  <input type="text" name="personal[nombre]" /><br />
-                        Email:   <input type="text" name="personal[email]" /><br />
+                        Nombre:  <input type="text" class="form-control" name="personal[nombre]" /><br />
+                        Email:   <input type="text" class="form-control" name="personal[email]" /><br />
                         Cerveza: <br />
-                        <select multiple name="cerveza[]">
+                        <select multiple class="form-control" name="cerveza[]">
                             <option value="warthog">Warthog</option>
                             <option value="guinness">Guinness</option>
                             <option value="stuttgarter">Stuttgarter Schwabenbräu</option>
                         </select><br />
-                        <input type="submit" value="¡enviarme!" />
-                        <input type="image" src="https://image.shutterstock.com/image-photo/butterfly-grass-on-meadow-night-260nw-1111729556.jpg" name="sub" alt="imagen"/>
+                        <input type="submit" value="¡enviarme!" class="btn btn-outline-primary"/>
                     </form>
                 </div>
             </div>
