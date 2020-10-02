@@ -1,41 +1,5 @@
 <?php
 
-echo 'Esto es una cadena sencilla';
-
-echo 'También se pueden incluir nuevas líneas en
-        un string de esta forma, ya que es
-        correcto hacerlo así';
-
-// Resultado: Arnold una vez dijo: "I'll be back"
-echo 'Arnold una vez dijo: "I\'ll be back"';
-
-// Resultado: Ha borrado C:\*.*?
-echo 'Ha borrado C:\\*.*?';
-
-// Resultado: Ha borrado C:\*.*?
-echo 'Ha borrado C:\*.*?';
-
-// Resultado: Esto no se expandirá: \n una nueva línea
-echo 'Esto no se expandirá: \n una nueva línea';
-
-// Resultado: Las variables $tampoco se $expandirán
-echo 'Las variables $tampoco se $expandirán';
-
-//Entrecomillado doble
-//    Caracteres escapados
-//    Secuencia	Significado
-//    \n avance de línea (LF o 0x0A (10) en ASCII)
-//    \r retorno de carro (CR o 0x0D (13) en ASCII)
-//    \t tabulador horizontal (HT o 0x09 (9) en ASCII)
-//    \v tabulador vertical (VT o 0x0B (11) en ASCII) (desde PHP 5.2.5)
-//    \e escape (ESC o 0x1B (27) en ASCII) (desde PHP 5.4.4)
-//    \f avance de página (FF o 0x0C (12) en ASCII) (desde PHP 5.2.5)
-//    \\ barra invertida
-//    \$ signo de dólar
-//    \" comillas dobles
-
-echo "Las \n dd";
-
 //Heredoc 
 
 $str = <<<EOD
