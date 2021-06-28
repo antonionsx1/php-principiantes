@@ -1,13 +1,15 @@
 <?php
 
-function test() {
-    $foo = "variable local";
-    echo '$foo en el ámbito global: ' . $GLOBALS["foo"] . "<br>";
-    echo '$foo en el ámbito simple: ' . $foo . "<br>";
+function getPostValue($key, $default = NULL) {
+    // $_POST is a superglobal and can be used without
+    // having to specify 'global $_POST;'
+    if (isset($_POST[$key])) {
+        return $_POST[$key];
+    }
+    return $default;
 }
 
-$foo = "Contenido GLOBAL de ejemplo";
-test();
-$GLOBALS;
-
-var_dump($GLOBALS);
+// retrieves $_POST['username']
+echo getPostValue('username');
+// retrieves $_POST['email'] and defaults to empty string
+echo getPostValue('email', '');

@@ -16,24 +16,19 @@
                     <?php include($_SERVER['DOCUMENT_ROOT'] . '/php-principiantes/menu.php'); ?>
                 </div>
                 <div class="col-xl-10">
-                    <h1>Etiquetas de PHP</h1>
-                    PHP busca las etiquetas de apertura: <code><&quest;php</code> y cierre: <code>?></code> 
-                    <p>Ejemplo: <?php echo 'Hola mundo'; ?></p>
-                    <p>Cualquier cosa fuera de un par de etiquetas de apertura y cierre simplemente comienza a imprimir 
-                        cualquier cosa dependiendo de las estructuras de control de PHP.
-                    </p>
-                    <ol>
-                        <?php
-                        //
-                        for ($index = 0; $index <= 4; $index++):
-                            ?>
-                            <li>Hola Mundo</li>
-                            <?php
-                        endfor;
-                        ?>
-                    </ol>
-                    <p>Evaluación de expresiones en línea: <code><&quest;= expresión ?></code></p>
-                    <?= "Hola mundo" == "Hola mundo" ? "Expresión verdadera." : "Expresión falsa" ?>
+                    <h1>Inclusión de ficheros PHP</h1>
+                    <code>
+                        <pre>
+                            require('/directorio/fichero');
+                            include('/directorio/fichero');
+                            require_once('/directorio/fichero');
+                            include_once('/directorio/fichero');
+                        </pre>
+                    </code>
+                    <code>require</code> produce un error fatal y la terminación del script si falla.<br>
+                    <code>include</code> solo produce un warning.<br>
+                    <code>include_once</code> y <code>require_once</code> para incluir definiciones estáticas.
+                    <?= $menu_nombre ?>
                 </div>
             </div>
         </div>

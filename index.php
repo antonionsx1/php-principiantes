@@ -10,10 +10,17 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-xl-2 bd-sidebar border">
-                    <?php include($_SERVER['DOCUMENT_ROOT'].'/php-principiantes/menu.php') ?>
-                </div>
-                <div class="col-xl-10 index"></div>
+                <div class="col-xl-2 bd-sidebar border"><?php include("./menu.php") ?></div>
+                <?php
+                $url = "";
+                if (isset($_GET["action"])) {
+                    include $_GET["action"];
+                } else {
+                    ?>
+                    <div class="col-xl-10 index"></div>
+                    <?php
+                }
+                ?>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
